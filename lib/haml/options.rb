@@ -24,7 +24,8 @@ module Haml
       :cdata                => false,
       :parser_class         => ::Haml::Parser,
       :compiler_class       => ::Haml::Compiler,
-      :trace                => false
+      :trace                => false,
+      :default_tag          => '%div'
     }
 
     @valid_formats = [:html4, :html5, :xhtml]
