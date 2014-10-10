@@ -425,7 +425,7 @@ module Haml
     # Renders a line that creates an XHTML tag and has an implicit div because of
     # `.` or `#`.
     def div(line)
-      line.text = "#{@options[:default_tag] || '%div'}#{line.text}"
+      line.text = "%#{@options[:default_tag] || 'div'}#{line.text}"
       tag(line)
     end
 
